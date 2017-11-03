@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 톰켓한테 connectionPool 제작 요청하는 방법 -->
+<Context>
+	<Resource name="jdbc/myoracle"
+			auth="Container"
+			type="javax.sql.DataSource"
+			driverClassName="oracle.jdbc.OracleDriver"
+			url="jdbc:oracle:thin:@localhost:1521:xe"
+			username="hr"
+			password="zxcv1234"
+			maxTotal="10"
+			maxIdle="5"
+			maxWaiMillis="-1" />
+</Context>
